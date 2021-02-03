@@ -1,0 +1,25 @@
+*/
+label {
+    display: block;
+    float: left;
+}
+
+label, input {
+    display: block;
+    padding: 5px;
+	margin: 3px 0;
+}
+
+
+button{
+    margin: 10px;
+    color: white;
+    background: #98101A;
+    padding: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #98101A;
+    background: white
+}
