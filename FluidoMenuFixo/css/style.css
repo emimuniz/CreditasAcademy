@@ -69,9 +69,8 @@ header {
 
 .side-nav{
   max-width: 250%;
-  /* height: 100vh; */
-  background: #F2E307; 
-  position: fixed; 
+  position: fixed;
+  background: #F2E307;  
 }
 
 .side-nav ul li{
@@ -101,7 +100,7 @@ header {
 
 .main-container .sobre{
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 
 }
 
@@ -137,17 +136,27 @@ header {
   width: 100%;
 }
 
+
+.destaque{
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 1300px; */
+  margin:  0 auto;
+}
+
 .sobre-item {
+  flex: 1 1 200px;
+  margin: 40px;
   width: 420px;
   height: 100%;
 	float: left;
-	margin: 0 25px;
 }
+
+
 
 .sobre-item img {
 	display: block;
-  max-width: 100%;
-  object-fit: cover;
+  width: 100%;
 }
 
 .sobre-item h3 {
@@ -161,7 +170,6 @@ header {
 	text-align: center;
 	padding: 5px 0 10px 0;
 	top: -25px;
-	position: relative;
 }
 
 .sobre > p {
@@ -172,4 +180,6 @@ header {
 	margin: 20px auto;
 	max-width: 460px;
 }
+
+
 
