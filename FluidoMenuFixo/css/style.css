@@ -100,7 +100,7 @@ header {
 
 .main-container .sobre{
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
 
 }
 
@@ -118,6 +118,13 @@ header {
   font-size: 30px;
   text-align: center;
   color: #F2E307;
+}
+
+.sobre-container{
+  /* display: flex; */
+  flex-wrap: wrap;
+  /* align-content: flex-end; */
+  column-count: 3;
 }
 
 .sobre-container::after, .sobre-container::before {
