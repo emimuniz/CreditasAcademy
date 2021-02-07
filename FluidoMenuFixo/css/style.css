@@ -120,11 +120,11 @@ header {
   color: #F2E307;
 }
 
+
 .sobre-container{
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
-  /* align-content: flex-end; */
-  column-count: 3;
+  margin: 0 auto;
 }
 
 .sobre-container::after, .sobre-container::before {
@@ -153,13 +153,11 @@ header {
 
 .sobre-item {
   flex: 1 1 200px;
-  margin: 40px;
-  width: 420px;
+  margin: 10px;
+  width: 30%;
   height: 100%;
 	float: left;
 }
-
-
 
 .sobre-item img {
 	display: block;
@@ -170,7 +168,6 @@ header {
 	font-size: 1.25em;
 	line-height: 1em;
 	background: #252525;
-	width: 420px;
 	color: #fff;
 	font-style: italic;
 	font-weight: normal;

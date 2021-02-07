@@ -70,6 +70,7 @@ header {
 .side-nav{
   max-width: 250%;
   background: #F2E307;  
+  float: left;
 }
 
 .side-nav ul li{
@@ -119,6 +120,12 @@ header {
   color: #F2E307;
 }
 
+.sobre-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
 .sobre-container::after, .sobre-container::before {
 	content: '';
 	display: table;
@@ -145,8 +152,8 @@ header {
 
 .sobre-item {
   flex: 1 1 200px;
-  margin: 40px;
-  width: 420px;
+  margin: 10px;
+  width: 30%;
   height: 100%;
 	float: left;
 }
@@ -162,7 +169,7 @@ header {
 	font-size: 1.25em;
 	line-height: 1em;
 	background: #252525;
-	width: 420px;
+	/* width: 420px; */
 	color: #fff;
 	font-style: italic;
 	font-weight: normal;
