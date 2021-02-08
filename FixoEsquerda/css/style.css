@@ -122,12 +122,12 @@ header {
 }
 
 
-.sobre-container {
+.hamburgueres-container {
 	max-width: 900px;
 	margin: 0 auto;
 }
 
-.sobre-container::after, .sobre-container::before {
+.hamburgueres-container::after, .hamburgueres-container::before {
 	content: '';
 	display: table;
 	clear: both;
@@ -139,20 +139,20 @@ header {
 	margin-bottom: 20px;
 }
 
-.sobre-item {
+.sobre .item {
 	width: 210px;
 	float: left;
 	margin: 0 2px;
 }
 
-.sobre-item img {
+.sobre .item img {
 	display: block;
   max-width: 100%;
   margin-bottom: 30px;
   object-fit: cover;
 }
 
-.sobre-item h3 {
+.sobre .item h3 {
 	font-size: 1.25em;
 	line-height: 1em;
 	background: #252525;
@@ -177,27 +177,4 @@ header {
 
 
 /* footer */
-
-/* .footer {
-  display: flex;
-	background: #110802;
-	padding: 30px 0;
-	font-size: 1.125em;
-	line-height: 1.4em;
-}
-
-.footer .footer-container p{
-  color: white;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img{
-  width: 100px;
-  height: 110px;
-
-} */
-
 

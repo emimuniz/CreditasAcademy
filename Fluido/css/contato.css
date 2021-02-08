@@ -28,6 +28,7 @@
     height: 40px;
     margin-bottom: 20px;
     text-indent: 20px;
+    outline: none;
   }
   
   .form-contact-textarea {
@@ -46,6 +47,7 @@
     padding-left: 0;
     padding-right: 0;
     font-family: "Arial", Times, serif;
+    outline: none;
   }
   
   .form-contact-button {
