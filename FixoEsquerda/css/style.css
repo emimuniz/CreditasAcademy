@@ -139,20 +139,20 @@ header {
 	margin-bottom: 20px;
 }
 
-.sobre .item {
+.sobre .hamburguere-item {
 	width: 210px;
 	float: left;
 	margin: 0 2px;
 }
 
-.sobre .item img {
+.sobre .hamburguere-item img {
 	display: block;
   max-width: 100%;
   margin-bottom: 30px;
   object-fit: cover;
 }
 
-.sobre .item h3 {
+.sobre .hamburguere-item h3 {
 	font-size: 1.25em;
 	line-height: 1em;
 	background: #252525;
