@@ -100,8 +100,6 @@ header {
 
 .main-container .sobre{
   margin: 0 auto;
-  width: 70%;
-
 }
 
 .main-container .sobre h2{
@@ -120,6 +118,10 @@ header {
   color: #F2E307;
 }
 
+.hamburgueres{
+  max-width: 50%;
+  margin: 0 auto;
+}
 
 .hamburgueres-container{
   display: flex;

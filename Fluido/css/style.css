@@ -120,6 +120,11 @@ header {
   color: #F2E307;
 }
 
+.hamburgueres{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 .hamburgueres-container{
   display: flex;
   flex-wrap: wrap;
