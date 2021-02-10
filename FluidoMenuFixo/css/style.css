@@ -68,8 +68,8 @@ header {
 /*nav*/
 
 .side-nav{
-  max-width: 250%;
-  position: fixed;
+  min-width: 250px;
+  /* position: fixed; */
   background: #F2E307;  
 }
 

@@ -140,15 +140,16 @@ header {
 }
 
 .sobre .hamburguere-item {
-	width: 210px;
-	float: left;
-	margin: 0 2px;
+  width: 210px;
+  height: 400px;
+  float: left;
+  margin: 0 2px;
 }
 
 .sobre .hamburguere-item img {
 	display: block;
+  height: 80%;
   max-width: 100%;
-  margin-bottom: 30px;
   object-fit: cover;
 }
 
