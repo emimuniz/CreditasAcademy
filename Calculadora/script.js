@@ -60,3 +60,4 @@ function handleButton(event){
 buttons.forEach((item) => {
     item.addEventListener('click', handleButton)
 })
+
