@@ -1,0 +1,280 @@
+html{
+    font-size: 15px;
+    font-family: "Roboto Cn", sans-serif;
+}
+
+body{
+    background: #FFFF;
+    overflow-x: hidden;
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 40px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+.image{
+    width: 500px;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #1F2D27;
+    margin-bottom: 24px;
+    font-family: Helvetica Now Display;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6F7974;
+    font-family: Helvetica Now Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+
+/*menu*/
+
+nav .menu{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    width: 100%;
+    height: 80px;
+    overflow: visible;
+    z-index: 1;
+}
+
+nav .menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    margin-left: 34px;
+    font-family: Helvetica Now Display;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1F2D27;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    cursor: pointer;
+}
+
+
+.menu button {
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(31, 45, 39);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: "Helvetica Now Display";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    border: none;
+    background-color: rgb(73, 226, 149);
+    font-weight: 500;
+    transition: box-shadow 0.3s ease 0s;
+}
+
+/*garantias*/
+.garantias {
+    max-width: 40em;
+    max-height: 50em;
+    margin: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.garantia {
+    border-radius: 10px;
+    width: 40em;
+    box-shadow:  0 0 64px rgb(30 30 30 / 4%);
+    background: white;
+    display: inline-block;
+    margin: 10px;
+    padding-bottom: 2em;
+    border: 2px solid #acacac;
+}
+
+.garantia-imovel {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 25em;
+    height: 25em;
+    box-shadow:  0 0 64px rgb(30 30 30 / 4%);
+    background: white;
+    margin: 10px;
+    padding-bottom: 2em;
+    border: 2px solid #acacac;
+}
+
+.garantia-imovel h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #1F2D27;
+    margin-bottom: 24px;
+    font-family: Helvetica Now Display;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.garantia-imovel .button, .button{
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2D27;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: Helvetica Now Display;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    background-color: #49E295;
+    font-weight: 500;
+    transition: box-shadow 0.3s;
+    margin-top: 2px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 48px;
+}
+
+.garantia-imovel input{
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.garantia:hover, .garantia-imovel:hover {
+    background: #f9f9f9;
+    border: 2px solid #000;
+    
+}
+
+.garantia p {
+    margin: 5px;
+    color: #11BB77;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+.garantia h3 {
+    color: rgb(31, 45, 39);
+    font-size: 1.8em;
+    text-align: center;
+    height: 2em;
+    padding-top: .6em;
+    margin: 5px;
+}
+
+
+.garantia div {
+    text-align: center;
+    color: gray;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+/*Solicitacao*/
+.register-container{
+    background-color: rgb(251, 251, 251);
+}
+
+.content{
+    margin: 18px;
+}
+
+.content section{
+    text-align: center;
+}
+.content form{
+    margin: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content input{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    appearance: none;
+    color: rgb(136, 136, 153);
+    border: 1px solid rgb(221, 221, 221);
+    width: 100%;
+    margin: 20px;
+    padding: 0.75rem;
+    border-radius: 0.125em;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(221, 221, 221);
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color:rgb(221, 221, 221);
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: rgb(221, 221, 221); 
+ }
+ 
+ :-ms-input-placeholder {  
+    color: rgb(221, 221, 221);
+ }
+
+
+
+
+
