@@ -23,7 +23,7 @@ class CustomerController(private  val repository: CustomerRepository,
     fun read() = ResponseEntity.ok(repository.findAll())
 
     @GetMapping("/{document}")
-    private fun  getCustomerId(@PathVariable document: String) =  repository
+     fun  getCustomerId(@PathVariable document: String) =  repository
         .findByDocument(document)
         .orElseThrow { throw ResponseStatusException(HttpStatus.NOT_FOUND) }
         .let { ResponseEntity(it, HttpStatus.OK) }
@@ -48,9 +48,10 @@ class CustomerController(private  val repository: CustomerRepository,
         return ResponseEntity(person, HttpStatus.OK)
     }
 
-
-
-
     @DeleteMapping("/{document}")
-    fun delete(@PathVariable document: String) = repository.findByDocument(document).ifPresent{ repository.delete(it)}
+    fun deleteCustomer(@PathVariable document: String) =  repository
+        .findByDocument(document)
+        .orElseThrow { throw ResponseStatusException(HttpStatus.NOT_FOUND) }
+        .let { repository.delete(it) }
+
 }
