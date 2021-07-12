@@ -25,7 +25,9 @@ data class Customer(
     val contemMatriculaImovel: Boolean,
     val cpf: String,
     var valorfinal: MutableMap<Int, Double> = mutableMapOf()
-) {
-
+){
+    fun reajustarEmprestimo(valor: MutableMap<Int, Double>){
+        this.valorfinal = valor;
+    }
 
 }

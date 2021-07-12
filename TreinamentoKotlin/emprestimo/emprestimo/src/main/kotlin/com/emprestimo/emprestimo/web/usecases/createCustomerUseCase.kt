@@ -17,8 +17,9 @@ class createCustomerUseCase {
     private lateinit var customerRepository: CustomerRepository
 
     fun perform(createCustomer: Customer) : Customer {
-        var emprestimo =  calc(createCustomer.valor)
-        createCustomer.valorfinal = emprestimo.emprestimoValorFinal()
+        val emprestimo =  calc(createCustomer.valor)
+        val valorfinal = emprestimo.emprestimoValorFinal()
+        createCustomer.reajustarEmprestimo(valorfinal)
         val persistedCustomer = customerRepository.save(createCustomer)
         return persistedCustomer
     }
