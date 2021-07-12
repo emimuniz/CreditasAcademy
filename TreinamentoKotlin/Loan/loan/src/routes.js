@@ -7,6 +7,8 @@ import GarantiaVeiculo from "./components/GarantiaVeiculo";
 import InformacoesComplementares from './components/Solicitacao/InformacoesComplementares'
 import InformacoesImovel from './components/Solicitacao/InformacoesImovel'
 import Simulacao from './components/Simulacao'
+import Login from './components/Login'
+import Documentos from './components/Documentos'
 
 export default function Routes(){
     return(
@@ -18,6 +20,8 @@ export default function Routes(){
                 <Route path="/emprestimo/solicitacao/informacoes-complementares"  component={InformacoesComplementares}/>
                 <Route path="/emprestimo/solicitacao/informacoes-imovel" component={InformacoesImovel}/>
                 <Route path="/emprestimo/solicitacao/simulacao" component={Simulacao}/>
+                <Route path="/emprestimo" component={Login}/>
+                <Route path="/emprestimo/documentos" component={Documentos}/>
 
             </Switch>
         </BrowserRouter>
