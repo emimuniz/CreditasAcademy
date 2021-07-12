@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect} from 'react';
-import { Redirect } from 'react-router'
+import { useHistory } from "react-router-dom";
 import * as api from '../../../service/endpoints';
 
 
@@ -18,11 +18,11 @@ export default function InformacoesImovel(props){
     const informationCustomer = props.location.state
     const cpf = informationCustomer.cpf
     const document = cpf.replace(/\.|\-/g, '')
+    let history = useHistory();
     
-
-
+    
     async function handleRegister(e){
-        e.preventDefault();
+        e.preventDefault()
 
         const data = {...informationCustomerImovel, ...informationCustomer, document: document};
         console.log(data)   
@@ -35,11 +35,14 @@ export default function InformacoesImovel(props){
             console.log(err)
         }
 
-        return <Redirect to={{     
+        history.push({
             pathname: "/emprestimo/solicitacao/simulacao",
-            state: document }} />
-        
+            state: { document: document }
+        })
+            
     }
+
+
     return(
         <main className="register-container">
             <div className="content">
@@ -48,7 +51,7 @@ export default function InformacoesImovel(props){
                     <p>Essas informações vão acelerar a liberação do valor na sua conta.</p>
 
                 </section>
-                <form onSubmit={handleRegister}>
+                <form>
                     <div>
                         <label for="cepImovel">Qual o cep do seu imovel?</label>
                         <input 
@@ -125,7 +128,7 @@ export default function InformacoesImovel(props){
                     </div>  
 
                     
-                    <button className="button" type="submit">Simulação</button>
+                    <button onClick={handleRegister} className="button" type="submit">Simulação</button>
                 </form>
             </div>
         </main>

@@ -25,8 +25,9 @@ module.exports = {
       return await fetch(`${BASE_URL}/${id}`, {
         method: 'GET',
         headers:{
-          'Accept': 'application/json',
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Credentials': "true",
+          'Accept': 'application/json',
         }
       });
     },

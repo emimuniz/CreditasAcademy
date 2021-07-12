@@ -93,8 +93,10 @@ export default function InformacoesComplementares(props){
                         </div>  
 
                         <div>
-                            <label>Qual seu tipo de atividade Profissional?</label>                  
+                            <label for="atividadeProfissional">Qual seu tipo de atividade Profissional?</label>                  
                                 <input 
+                                    id="atividadeProfissional"
+                                    placeholder="Programador"
                                     value={informationCustomer.atividadeProfissional}
                                     onChange={e => setInformationCustomer({...informationCustomer, atividadeProfissional: e.target.value})} 
                                 />
@@ -102,8 +104,10 @@ export default function InformacoesComplementares(props){
 
 
                         <div>
-                            <label>Como esse emprestimo vai ajudar você?</label>                  
+                            <label for="motivoEmprestimo">Como esse emprestimo vai ajudar você?</label>                  
                                 <input 
+                                    id="motivoEmprestimo"
+                                    placeholder="Divida"
                                     value={informationCustomer.objetivoEmprestimo}
                                     onChange={e => setInformationCustomer({...informationCustomer, objetivoEmprestimo: e.target.value})} 
                                 />
